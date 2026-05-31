@@ -1,0 +1,24 @@
+﻿
+Running 17 tests using 1 worker
+
+Admin access result URL: http://localhost:3000/admin/dashboard, Status: 200
+  ok  1 [chromium] ΓÇ║ e2e\admin-access.spec.ts:8:7 ΓÇ║ Admin Access Control ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-14: unauthenticated access to /admin/dashboard is blocked or redirected (4.8s)
+  ok  2 [chromium] ΓÇ║ e2e\admin-access.spec.ts:39:7 ΓÇ║ Admin Access Control ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-15: admin login page loads successfully (1.8s)
+Admin login page has form: [33mtrue[39m
+  ok  3 [chromium] ΓÇ║ e2e\admin-access.spec.ts:55:7 ΓÇ║ Admin Access Control ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-16: admin login form shows error on empty submission (1.5s)
+  ok  4 [chromium] ΓÇ║ e2e\admin-access.spec.ts:85:7 ΓÇ║ Admin Access Control ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-17: admin pemesanan page responds without 500 error (2.5s)
+  ok  5 [chromium] ΓÇ║ e2e\home.spec.ts:8:7 ΓÇ║ Home Page ΓÇö System Tests ΓÇ║ TC-SYS-01: homepage loads and displays the hero section (2.7s)
+  ok  6 [chromium] ΓÇ║ e2e\home.spec.ts:22:7 ΓÇ║ Home Page ΓÇö System Tests ΓÇ║ TC-SYS-02: navbar is visible on homepage (1.7s)
+  ok  7 [chromium] ΓÇ║ e2e\home.spec.ts:35:7 ΓÇ║ Home Page ΓÇö System Tests ΓÇ║ TC-SYS-03: login navigation link works from homepage (4.1s)
+  ok  8 [chromium] ΓÇ║ e2e\login.spec.ts:12:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-04: login page loads with form fields visible (3.9s)
+  ok  9 [chromium] ΓÇ║ e2e\login.spec.ts:25:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-05: submitting empty login form shows email error (1.9s)
+  ok 10 [chromium] ΓÇ║ e2e\login.spec.ts:40:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-06: invalid email format shows format validation error (2.1s)
+  ok 11 [chromium] ΓÇ║ e2e\login.spec.ts:56:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-07: password shorter than 6 chars shows password error (2.6s)
+  ok 12 [chromium] ΓÇ║ e2e\login.spec.ts:72:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-08: valid credentials redirect to paket-tour page (4.2s)
+  ok 13 [chromium] ΓÇ║ e2e\login.spec.ts:98:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-09: forgot password link navigates to forgot-password page (3.8s)
+  ok 14 [chromium] ΓÇ║ e2e\login.spec.ts:110:7 ΓÇ║ Login Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-10: register link navigates to register page (3.5s)
+  ok 15 [chromium] ΓÇ║ e2e\paket-tour.spec.ts:7:7 ΓÇ║ Paket Tour Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-11: paket-tour page loads and renders content (2.0s)
+  ok 16 [chromium] ΓÇ║ e2e\paket-tour.spec.ts:23:7 ΓÇ║ Paket Tour Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-12: search filter input is visible on paket-tour page (1.2s)
+  ok 17 [chromium] ΓÇ║ e2e\paket-tour.spec.ts:48:7 ΓÇ║ Paket Tour Page ΓÇö System Tests (Black-Box) ΓÇ║ TC-SYS-13: navigating to a package detail URL loads without 404 (738ms)
+
+  17 passed (46.2s)

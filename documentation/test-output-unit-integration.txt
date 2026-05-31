@@ -1,0 +1,210 @@
+﻿node.exe : PASS __tests__/unit/BookingFormValidation.test.ts
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (PASS __tests__/...idation.test.ts:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  BookingForm Validation Logic ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-31: valid form data returns empty errors object (7 ms)
+    ΓêÜ TC-UNIT-32: empty name returns required error (1 ms)
+    ΓêÜ TC-UNIT-33: whitespace-only name returns required error (1 ms)
+    ΓêÜ TC-UNIT-34: name with 2 characters returns min length error
+    ΓêÜ TC-UNIT-35: name with exactly 3 characters is valid
+    ΓêÜ TC-UNIT-36: missing departure date returns required error (2 ms)
+    ΓêÜ TC-UNIT-37: past departure date returns past date error
+    ΓêÜ TC-UNIT-38: future departure date is valid (1 ms)
+    ΓêÜ TC-UNIT-39: empty PAX returns required error (1 ms)
+    ΓêÜ TC-UNIT-40: PAX value of 0 returns minimum error
+    ΓêÜ TC-UNIT-41: negative PAX returns minimum error (1 ms)
+    ΓêÜ TC-UNIT-42: PAX value of 1 is valid
+    ΓêÜ TC-UNIT-43: empty email returns required error (1 ms)
+    ΓêÜ TC-UNIT-44: email without @ returns format error
+    ΓêÜ TC-UNIT-45: email without domain TLD returns format error
+    ΓêÜ TC-UNIT-46: valid email format passes validation
+    ΓêÜ TC-UNIT-47: empty WhatsApp number returns required error
+    ΓêÜ TC-UNIT-48: WhatsApp with 9 digits returns format error
+    ΓêÜ TC-UNIT-49: WhatsApp with 16 digits returns format error (1 ms)
+    ΓêÜ TC-UNIT-50: WhatsApp with dashes is valid if digits are 10-15
+    ΓêÜ TC-UNIT-51: WhatsApp with spaces is valid if digits are 10-15 (1 ms)
+    ΓêÜ TC-UNIT-52: WhatsApp with exactly 10 digits is valid
+    ΓêÜ TC-UNIT-53: WhatsApp with exactly 15 digits is valid
+    ΓêÜ TC-UNIT-54: multiple invalid fields produce multiple errors simultaneously
+    ΓêÜ TC-UNIT-55: empty institution field does not produce an error
+
+PASS __tests__/unit/PaymentStatusBadge.test.tsx
+  PaymentStatusBadge Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-98: paid status renders "Sudah Dibayar" label (48 ms)
+    ΓêÜ TC-UNIT-99: paid status has emerald background class (7 ms)
+    ΓêÜ TC-UNIT-100: paid status has emerald border class (6 ms)
+    ΓêÜ TC-UNIT-101: pending status renders "Menunggu Verifikasi" label (6 ms)
+    ΓêÜ TC-UNIT-102: pending status has amber background class (9 ms)
+    ΓêÜ TC-UNIT-103: pending status has amber border class (6 ms)
+    ΓêÜ TC-UNIT-104: verified status renders "Terverifikasi" label (4 ms)
+    ΓêÜ TC-UNIT-105: verified status has green background class (4 ms)
+    ΓêÜ TC-UNIT-106: verified status has green border class (4 ms)
+    ΓêÜ TC-UNIT-107: all payment badges have rounded-full pill shape (8 ms)
+    ΓêÜ TC-UNIT-108: verified badge contains an SVG icon (4 ms)
+    ΓêÜ TC-UNIT-109: paid badge contains an SVG icon (3 ms)
+
+PASS __tests__/unit/Input.test.tsx
+  Input Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-16: renders an input element (99 ms)
+    ΓêÜ TC-UNIT-17: renders label when label prop is provided (11 ms)
+    ΓêÜ TC-UNIT-18: does not render label when label prop is absent (6 ms)
+    ΓêÜ TC-UNIT-19: when startIcon is provided, input has pl-12 class (13 ms)
+    ΓêÜ TC-UNIT-20: without startIcon, input has pl-4 class (10 ms)
+    ΓêÜ TC-UNIT-21: when endIcon is provided, input has pr-12 class (7 ms)
+    ΓêÜ TC-UNIT-22: without endIcon, input has pr-4 class (8 ms)
+    ΓêÜ TC-UNIT-23: placeholder attribute is applied to input (4 ms)
+    ΓêÜ TC-UNIT-24: custom className is merged into input (6 ms)
+    ΓêÜ TC-UNIT-25: ref is forwarded to the input element (8 ms)
+    ΓêÜ TC-UNIT-26: Input has correct displayName
+    ΓêÜ TC-UNIT-27: startIcon element is rendered in DOM (4 ms)
+    ΓêÜ TC-UNIT-28: endIcon element is rendered in DOM (3 ms)
+    ΓêÜ TC-UNIT-29: input has base border and rounded classes (6 ms)
+    ΓêÜ TC-UNIT-30: containerClassName is applied to the wrapper div (3 ms)
+
+PASS __tests__/unit/Button.test.tsx
+  Button Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-01: renders children text correctly (113 ms)
+    ΓêÜ TC-UNIT-02: applies primary variant styles by default (22 ms)
+    ΓêÜ TC-UNIT-03: applies success variant styles (24 ms)
+    ΓêÜ TC-UNIT-04: applies danger variant styles (8 ms)
+    ΓêÜ TC-UNIT-05: applies outline variant styles (8 ms)
+    ΓêÜ TC-UNIT-06: applies secondary variant styles (7 ms)
+    ΓêÜ TC-UNIT-07: applies ghost variant styles (7 ms)
+    ΓêÜ TC-UNIT-08: fullWidth prop adds w-full class (7 ms)
+    ΓêÜ TC-UNIT-09: without fullWidth prop, w-full is not added by prop (10 ms)
+    ΓêÜ TC-UNIT-10: startIcon renders icon inside button (4 ms)
+    ΓêÜ TC-UNIT-11: disabled prop disables the button (5 ms)
+    ΓêÜ TC-UNIT-12: onClick handler is called when button clicked (11 ms)
+    ΓêÜ TC-UNIT-13: onClick does NOT fire when button is disabled (4 ms)
+    ΓêÜ TC-UNIT-14: Button has correct displayName (1 ms)
+    ΓêÜ TC-UNIT-15: custom className is applied (4 ms)
+
+PASS __tests__/unit/useTableSort.test.ts
+  useTableSort Hook ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-56: returns original data order when no sort is applied (26 ms)
+    ΓêÜ TC-UNIT-57: initial sortConfig has null key and null direction (4 ms)
+    ΓêÜ TC-UNIT-58: sorts string column ascending correctly (5 ms)
+    ΓêÜ TC-UNIT-59: sorts string column descending on second click (4 ms)
+    ΓêÜ TC-UNIT-60: resets to original order on third click (null direction) (5 ms)
+    ΓêÜ TC-UNIT-61: sorts numeric column ascending correctly (2 ms)
+    ΓêÜ TC-UNIT-62: sorts numeric column descending correctly (3 ms)
+    ΓêÜ TC-UNIT-63: null values are sorted to the end when ascending (2 ms)
+    ΓêÜ TC-UNIT-64: switching to a different sort key resets to ascending (2 ms)
+    ΓêÜ TC-UNIT-65: getSortIcon returns a React element for inactive column (3 ms)
+    ΓêÜ TC-UNIT-66: getSortIcon changes when sort is active (1 ms)
+    ΓêÜ TC-UNIT-67: handles empty data array gracefully (1 ms)
+    ΓêÜ TC-UNIT-68: single item data returns that item unchanged (1 ms)
+    ΓêÜ TC-UNIT-69: sortConfig.key and direction update after requestSort (2 ms)
+    ΓêÜ TC-UNIT-70: string sorting is case-insensitive (2 ms)
+
+PASS __tests__/unit/OrderStatusBadge.test.tsx
+  OrderStatusBadge Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-86: dikonfirmasi status shows "Dikonfirmasi" label (42 ms)
+    ΓêÜ TC-UNIT-87: dikonfirmasi status has green background class (7 ms)
+    ΓêÜ TC-UNIT-88: dikonfirmasi status has green text applied to inner elements (5 ms)
+    ΓêÜ TC-UNIT-89: pending status shows "Pending" label (5 ms)
+    ΓêÜ TC-UNIT-90: pending status has yellow background class (5 ms)
+    ΓêÜ TC-UNIT-91: pending status has amber text applied to inner elements (3 ms)
+    ΓêÜ TC-UNIT-92: dibatalkan status shows "Dibatalkan" label (4 ms)
+    ΓêÜ TC-UNIT-93: dibatalkan status has red background class (3 ms)
+    ΓêÜ TC-UNIT-94: dibatalkan status has red text applied to inner elements (3 ms)
+    ΓêÜ TC-UNIT-95: badge renders as a container div element (3 ms)
+    ΓêÜ TC-UNIT-96: all badges have rounded-full pill shape class (2 ms)
+    ΓêÜ TC-UNIT-97: badge includes an SVG icon element (4 ms)
+
+PASS __tests__/unit/ScheduleStatusBadge.test.tsx
+  ScheduleStatusBadge Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-110: active status renders "Aktif" label (42 ms)
+    ΓêÜ TC-UNIT-111: active status has emerald background class (6 ms)
+    ΓêÜ TC-UNIT-112: active status has emerald border class (5 ms)
+    ΓêÜ TC-UNIT-113: active status icon div has emerald text class (5 ms)
+    ΓêÜ TC-UNIT-114: inactive status renders "Tidak Aktif" label (5 ms)
+    ΓêÜ TC-UNIT-115: inactive status has red background class (3 ms)
+    ΓêÜ TC-UNIT-116: inactive status has red border class (2 ms)
+    ΓêÜ TC-UNIT-117: inactive status has red text applied to inner elements (2 ms)
+    ΓêÜ TC-UNIT-118: badge has rounded-full pill shape class (3 ms)
+    ΓêÜ TC-UNIT-119: badge uses inline-flex layout class (3 ms)
+    ΓêÜ TC-UNIT-120: active badge contains a checkmark SVG icon (4 ms)
+    ΓêÜ TC-UNIT-121: inactive badge contains an X SVG icon (2 ms)
+
+PASS __tests__/unit/Pagination.test.tsx
+  Pagination Component ΓÇö Unit Tests
+    ΓêÜ TC-UNIT-71: shows correct item range text for first page (67 ms)
+    ΓêÜ TC-UNIT-72: shows correct item range for page 3 of 5 (9 ms)
+    ΓêÜ TC-UNIT-73: shows correct item range for the last page (6 ms)
+    ΓêÜ TC-UNIT-74: previous button is disabled when on page 1 (75 ms)
+    ΓêÜ TC-UNIT-75: next button is disabled when on the last page (40 ms)
+    ΓêÜ TC-UNIT-76: previous button is enabled when not on first page (8 ms)
+    ΓêÜ TC-UNIT-77: next button is enabled when not on last page (7 ms)
+    ΓêÜ TC-UNIT-78: clicking previous button calls onPageChange with currentPage - 1 (12 ms)
+    ΓêÜ TC-UNIT-79: clicking next button calls onPageChange with currentPage + 1 (9 ms)
+    ΓêÜ TC-UNIT-80: clicking page 3 button calls onPageChange with 3 (12 ms)
+    ΓêÜ TC-UNIT-81: shows ellipsis (...) when there are many pages (8 ms)
+    ΓêÜ TC-UNIT-82: shows all page numbers without ellipsis when totalPages <= 5 (11 ms)
+    ΓêÜ TC-UNIT-83: changing items per page calls onItemsPerPageChange (10 ms)
+    ΓêÜ TC-UNIT-84: shows total item count in the display text (6 ms)
+    ΓêÜ TC-UNIT-85: startItem is 1 when on page 1 (5 ms)
+
+PASS __tests__/integration/SearchAndPagination.test.tsx
+  SearchFilter + Pagination Integration Tests
+    ΓêÜ TC-INT-11: SearchFilter and Pagination render together without errors (72 ms)
+    ΓêÜ TC-INT-12: typing in search box fires onSearch with correct value (28 ms)
+    ΓêÜ TC-INT-13: onSearch is called on every input change (19 ms)
+    ΓêÜ TC-INT-14: changing destination filter fires onDestinationChange (61 ms)
+    ΓêÜ TC-INT-15: changing duration filter fires onDurationChange (15 ms)
+    ΓêÜ TC-INT-16: clicking page 2 updates the item range display (31 ms)
+    ΓêÜ TC-INT-17: clicking next button fires onPageChange with page 2 (30 ms)
+    ΓêÜ TC-INT-18: changing items per page resets to page 1 and fires callback (15 ms)
+    ΓêÜ TC-INT-19: SearchFilter displays the totalResults count passed as prop (5 ms)
+    ΓêÜ TC-INT-20: clearing search input fires onSearch with empty string (7 ms)
+
+  console.log
+    Form submitted: {
+      name: 'Budi Santoso',
+      departureDate: '2026-06-07',
+      pax: '20',
+      institution: '',
+      email: 'budi@example.com',
+      whatsapp: '08123456789',
+      notes: ''
+    }
+
+      at log (components/ui/BookingForm.tsx:97:15)
+
+  console.log
+    Form submitted: {
+      name: 'Budi Santoso',
+      departureDate: '2026-06-07',
+      pax: '20',
+      institution: '',
+      email: 'budi@example.com',
+      whatsapp: '08123456789',
+      notes: ''
+    }
+
+      at log (components/ui/BookingForm.tsx:97:15)
+
+PASS __tests__/integration/BookingFormSubmit.test.tsx
+  BookingForm Submit Flow ΓÇö Integration Tests
+    ΓêÜ TC-INT-01: all required form fields are rendered on mount (73 ms)
+    ΓêÜ TC-INT-02: submitting empty form displays multiple validation error messages (136 ms)
+    ΓêÜ TC-INT-03: toast.error is called when submitting invalid form (20 ms)
+    ΓêÜ TC-INT-04: invalid email format shows email validation error (25 ms)
+    ΓêÜ TC-INT-05: typing in name field after error clears the name error (18 ms)
+    ΓêÜ TC-INT-06: name with fewer than 3 characters shows min length error (21 ms)
+    ΓêÜ TC-INT-07: WhatsApp with fewer than 10 digits shows format error (19 ms)
+    ΓêÜ TC-INT-08: submit button shows loading text during form submission (28 ms)
+    ΓêÜ TC-INT-09: valid form submission eventually calls toast.success (49 ms)
+    ΓêÜ TC-INT-10: form fields are reset to empty after successful submission (22 ms)
+
+Test Suites: 10 passed, 10 total
+Tests:       141 passed, 141 total
+Snapshots:   0 total
+Time:        3.447 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after 
+all tests finished?

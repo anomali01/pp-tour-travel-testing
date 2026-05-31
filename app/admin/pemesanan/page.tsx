@@ -79,6 +79,12 @@ export default function AdminPemesananPage() {
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
+  // Calculate stats first so they are available for filterTabs
+  const totalBookings = bookingsData.length;
+  const confirmedCount = bookingsData.filter(b => b.status === 'dikonfirmasi').length;
+  const pendingCount = bookingsData.filter(b => b.status === 'pending').length;
+  const cancelledCount = bookingsData.filter(b => b.status === 'dibatalkan').length;
+
   // Filter tabs configuration
   const filterTabs: FilterTab[] = [
     {
@@ -176,8 +182,8 @@ export default function AdminPemesananPage() {
     let filtered = bookingsData;
 
     // Filter by status
-    if (currentFilter !== 'all') {
-      filtered = filtered.filter(booking => booking.status === currentFilter);
+    if (activeTab !== 'semua') {
+      filtered = filtered.filter(booking => booking.status === activeTab);
     }
 
     // Search filter
@@ -204,12 +210,6 @@ export default function AdminPemesananPage() {
   React.useEffect(() => {
     setCurrentPage(1);
   }, [activeTab, searchQuery]);
-
-  // Calculate stats
-  const totalBookings = bookingsData.length;
-  const confirmedCount = bookingsData.filter(b => b.status === 'dikonfirmasi').length;
-  const pendingCount = bookingsData.filter(b => b.status === 'pending').length;
-  const cancelledCount = bookingsData.filter(b => b.status === 'dibatalkan').length;
 
   return (
     <div className="flex min-h-screen bg-white">
@@ -369,13 +369,13 @@ export default function AdminPemesananPage() {
             </>
           ) : (
             <div className="p-12">
-              {searchQuery || currentFilter !== 'all' ? (
+              {searchQuery || activeTab !== 'semua' ? (
                 <EmptySearch 
                   message="Tidak ada pemesanan yang cocok dengan pencarian Anda"
                   actionLabel="Reset Filter"
                   onAction={() => {
                     setSearchQuery('');
-                    setCurrentFilter('all');
+                    setActiveTab('semua');
                   }}
                 />
               ) : (
